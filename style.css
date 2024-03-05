@@ -7,7 +7,17 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 22.5em;
+    margin:auto;
 }
+
+@media screen and (min-width: 1024px){
+    article {
+        flex-direction: row;
+        max-width: 50em;
+        gap:10em;
+    }
+} 
 
 article section.intro{
     position: relative;
@@ -37,8 +47,14 @@ article section.intro p{
     left: 1em;
 }
 
-img{
+article section.intro img{
     max-width: 18em;
+}
+
+@media screen and (min-width: 1024px){
+    article section.intro img{
+        max-width: 30em;
+    }
 }
 
 nav li {
@@ -67,7 +83,6 @@ nav ul{
 
 .introtekst div:first-child{
     border-right: 0.1em rgba(0, 0, 0, 0.733) solid;
-    height: 14em;
 }
 
 .introtekst img{
@@ -77,10 +92,20 @@ nav ul{
     margin: 0em 0.7em 0.5em auto;
 }
 
+.introtekst div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1.2em 0;
+}
+
+
 .introtekst a{
     background-color: #DE8793 ;
     text-decoration: none;
     padding: 1em 1.5em;
     color: black;
+    border-radius: 0.2em;
 }
 
