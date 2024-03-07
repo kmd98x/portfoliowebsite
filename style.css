@@ -66,6 +66,23 @@ nav li {
 
 nav ul li a{
     text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+nav ul li a:hover span{
+    transform: scale(1.5);
+}
+
+nav ul li a span{
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 0.2em;
+    background-color:#DE8793;
+    display: inline-block;
 }
 
 nav ul{
@@ -74,6 +91,7 @@ nav ul{
     justify-content: flex-end;
     padding-right: 0.5em;
 }
+
 
 
 .introtekst{
