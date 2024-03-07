@@ -1,6 +1,19 @@
 body{
     background:#EEE7DF;
+    animation: fadepage 5s;
 }
+
+@keyframes fadepage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body
 
 article{
     margin-top: 3em;
@@ -70,11 +83,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.3em;
-}
-
-nav ul li a:hover span{
-    transform: scale(1.5);
+    gap: 0.27em;
 }
 
 nav ul li a span{
@@ -83,7 +92,14 @@ nav ul li a span{
     border-radius: 0.2em;
     background-color:#DE8793;
     display: inline-block;
+    transition: all;
+    transition-duration: 1s;
 }
+
+nav ul li a:hover span{
+    background:#a95964;
+}
+
 
 nav ul{
     display: flex;
@@ -121,11 +137,18 @@ nav ul{
 }
 
 
-.introtekst a{
-    background-color: #DE8793 ;
+.introtekst div:nth-child(2) a{
+
+    background: #DE8793 ;
     text-decoration: none;
-    padding: 1em 1.5em;
+    padding: 16px 24px;
     color: black;
     border-radius: 0.2em;
+    transition: 0.6s;
+    
+}
+
+.introtekst div:nth-child(2) a:hover{
+    background-color: #d17985 ;
 }
 
