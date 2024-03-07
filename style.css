@@ -19,11 +19,12 @@ article{
     }
 } 
 
-article section.intro{
+article section.geheelfoto{
     position: relative;
+    top:1.5em;
 }
 
-article section.intro span{
+article section.geheelfoto span{
     background:#D5C3AE ;
     height: 0.09em;
     display: inline-block;
@@ -32,27 +33,27 @@ article section.intro span{
 
 .firstline{
     left:-4.5em;
-    bottom: 7.6em;
+    bottom: 7.4em;
     width: 5em;
 }
 
 .secondline{
     width: 1em;
-    display: none;
+    opacity: 0;
 }
 
-article section.intro p{
+article section.geheelfoto p{
     position: absolute;
-    bottom: 6.2em;
+    bottom: 5.90em;
     left: 1em;
 }
 
-article section.intro img{
-    max-width: 18em;
+article section.geheelfoto img{
+    max-width: 17em;
 }
 
 @media screen and (min-width: 1024px){
-    article section.intro img{
+    article section.geheelfoto img{
         max-width: 30em;
     }
 }
@@ -79,6 +80,7 @@ nav ul{
     display: grid;
     grid-template-columns: 3.5em 1fr;
     gap:1em;
+    margin-top:3.5em;
 }
 
 .introtekst div:first-child{
