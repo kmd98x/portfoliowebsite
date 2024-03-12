@@ -13,7 +13,6 @@ body{
     }
 }
 
-body
 
 article{
     margin-top: 3em;
@@ -24,13 +23,16 @@ article{
     margin:auto;
 }
 
+/* als het 1024 is, dan zijn ze naast elkaar. Dus als het groter is dan 1024, pas de onderstaande srtyling toe en dat is dus dat het naast elkaar komt, anders is het onder elkaar voor de telefoon*/
+
 @media screen and (min-width: 1024px){
     article {
         flex-direction: row;
-        max-width: 50em;
-        gap:10em;
+        max-width: 70em;
+        gap:5em;
     }
 } 
+
 
 article section.geheelfoto{
     position: relative;
@@ -73,7 +75,6 @@ article section.geheelfoto img{
 
 nav li {
     list-style: none;
-    
 }
 
 
@@ -120,6 +121,11 @@ nav ul{
     margin-top:3.5em;
 }
 
+@media screen and (min-width:1024px) {
+    .introtekst{
+        max-width: 30em;
+    }
+}
 .introtekst div:first-child{
     border-right: 0.1em rgba(0, 0, 0, 0.733) solid;
 }
