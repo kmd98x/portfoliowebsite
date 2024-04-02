@@ -1,5 +1,5 @@
-body{
-    background:#EEE7DF;
+body {
+    background: #EEE7DF;
     animation: fadepage 3s;
 }
 
@@ -14,61 +14,138 @@ body{
 }
 
 
-article{
+article {
     margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 22.5em;
-    margin:auto;
+    margin: auto;
 }
 
 /* als het 1024 is, dan zijn ze naast elkaar. Dus als het groter is dan 1024, pas de onderstaande srtyling toe en dat is dus dat het naast elkaar komt, anders is het onder elkaar voor de telefoon*/
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 725px) {
     article {
         flex-direction: row;
         max-width: 70em;
-        gap:5em;
+        gap: 2em;
     }
-} 
-
-
-article section.geheelfoto{
-    position: relative;
-    top:1.5em;
 }
 
-article section.geheelfoto span{
-    background:#78212D ;
+
+article section.geheelfoto {
+    position: relative;
+    top: 1.5em;
+}
+
+article section.geheelfoto span {
+    background: #D5C3AE;
     height: 0.09em;
     display: inline-block;
     position: absolute;
 }
 
-.firstline{
-    left:-4.5em;
+.firstline {
+    left: -4.5em;
     bottom: 7.4em;
     width: 5em;
 }
 
-.secondline{
+
+.secondline {
     width: 1em;
     opacity: 0;
 }
 
-article section.geheelfoto p{
+@media screen and (min-width: 725px) {
+    .firstline {
+        left: -3.5em;
+        bottom: 8.5em;
+        width: 5em;
+    }
+
+    .secondline {
+        width: 1em;
+        opacity: 1;
+        bottom: 8.5em;
+        left: 10.3em;
+    }
+
+    .thirdline {
+        width: 8.3em;
+        opacity: 0.7;
+        bottom: 8.5em;
+        left: -1em;
+        top: 14.4em;
+        height: .15em !important;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .firstline {
+        left: -3.5em;
+        bottom: 13em;
+        width: 8em;
+    }
+
+    .secondline {
+        width: 0.9em;
+        opacity: 1;
+        bottom: 13em;
+        left: 15.9em;
+    }
+
+    .thirdline {
+        width: 13.3em;
+        opacity: 0.7;
+        bottom: 3.5em;
+        left: -2.3em;
+        top: 21.4em;
+        height: .3em !important;
+
+    }
+}
+
+
+article section.geheelfoto p {
     position: absolute;
     bottom: 5.90em;
     left: 1em;
 }
 
-article section.geheelfoto img{
+@media screen and (min-width: 725px) {
+    article section.geheelfoto p {
+        position: absolute;
+        bottom: 7.1em;
+        left: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    article section.geheelfoto p {
+        position: absolute;
+        bottom: 8.5em;
+        left: 4em;
+        font-size: 1.3em;
+    }
+}
+
+article section.geheelfoto img {
     max-width: 17em;
 }
 
-@media screen and (min-width: 1024px){
-    article section.geheelfoto img{
+
+
+@media screen and (min-width: 725px) {
+    article section.geheelfoto img {
+        max-width: 20em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    article section.geheelfoto img {
         max-width: 30em;
     }
 }
@@ -78,7 +155,7 @@ nav li {
 }
 
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     display: flex;
@@ -88,25 +165,25 @@ nav ul li a{
     transition: 0.6s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     transform: scale(1.03);
 }
 
-nav ul li a span{
+nav ul li a span {
     width: 0.3em;
     height: 0.3em;
     border-radius: 0.2em;
-    background-color:#78212D;
+    background-color: #78212D;
     display: inline-block;
     transition: 2s;
 }
 
-nav ul li a:hover span{
-    background:#a95964;
+nav ul li a:hover span {
+    background: #a95964;
 }
 
 
-nav ul{
+nav ul {
     display: flex;
     gap: 1.5em;
     justify-content: flex-end;
@@ -114,30 +191,27 @@ nav ul{
 }
 
 
-.introtekst{
+.introtekst {
     display: grid;
     grid-template-columns: 3.5em 1fr;
-    gap:1em;
-    margin-top:3.5em;
+    gap: 1em;
+    margin-top: 3.5em;
+    max-width: 21em;
 }
 
-@media screen and (min-width:1024px) {
-    .introtekst{
-        max-width: 30em;
-    }
-}
-.introtekst div:first-child{
+
+.introtekst div:first-child {
     border-right: 0.1em rgba(0, 0, 0, 0.733) solid;
 }
 
-.introtekst img{
+.introtekst img {
     width: 1.4em;
     display: block;
     margin-bottom: 0.5em;
     margin: 0em 0.7em 0.5em auto;
 }
 
-.introtekst div:nth-child(2){
+.introtekst div:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -146,8 +220,8 @@ nav ul{
 }
 
 
-.introtekst div:nth-child(2) a{
-    background: #78212D ;
+.introtekst div:nth-child(2) a {
+    background: #78212D;
     text-decoration: none;
     padding: 16px 24px;
     color: black;
@@ -157,28 +231,27 @@ nav ul{
     overflow: hidden;
 }
 
-.introtekst div:nth-child(2) a span:first-child{
+.introtekst div:nth-child(2) a span:first-child {
     background-color: hsl(352, 57%, 27%);
     width: 0;
     height: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     transition: 1s;
     z-index: 0;
     display: inline-block;
 }
 
-.introtekst div:nth-child(2) a span:nth-child(2){
+.introtekst div:nth-child(2) a span:nth-child(2) {
     z-index: 1;
     position: relative;
     color: #EEE7DF;
 }
 
-.introtekst div:nth-child(2) a:hover span:first-child{ 
+.introtekst div:nth-child(2) a:hover span:first-child {
     /* background-color: #d17985 ; */
     width: 100%;
 }
 
 /* =================== LATEST WORK ====================== */
-
