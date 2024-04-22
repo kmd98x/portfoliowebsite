@@ -35,27 +35,6 @@ article {
 
 /* als het 1024 is, dan zijn ze naast elkaar. Dus als het groter is dan 1024, pas de onderstaande srtyling toe en dat is dus dat het naast elkaar komt, anders is het onder elkaar voor de telefoon*/
 
-@media screen and (min-width: 725px) {
-    article {
-        justify-content: center;
-        flex-direction: row;
-        max-width: 70em;
-        gap: 2em;
-    }
-
-    .linkerbalk{
-        top:18em;
-        width: 4.1em;
-    }
-
-    .firstline{
-        width: 1em; 
-    }
-
-    .thirdline{
-        width:4em;
-    }
-}
 
 
 article section.geheelfoto {
@@ -86,9 +65,9 @@ article section.geheelfoto span {
 
 .forthline {
     background: #D5C3AE;
-    width: 18em;
+    /* width: 18em; */
     height: .2em;
-    display: block;
+    /* display: block; */
 }
 
 @media screen and (min-width: 510px) {
@@ -113,13 +92,37 @@ article section.geheelfoto span {
         top: 14.4em;
         height: 0.15em !important;
         background: #D5C3AE;
-        }
-
-        .forthline {
-            width: 21.7em;
-        }
     }
 
+    .forthline {
+        width: 21.7em;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    article {
+        justify-content: center;
+        max-width: 70em;
+        gap: 2em;
+    }
+
+    .linkerbalk {
+        top: 20em;
+        width: 14.1em;
+    }
+
+    .firstline {
+        width: 1em;
+    }
+
+    .thirdline {
+        width: 4em;
+    }
+
+    article section.geheelfoto img {
+        width: 40em !important;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .firstline {
@@ -249,7 +252,7 @@ nav ul {
     grid-template-columns: 3.5em 1fr;
     gap: 1em;
     margin-top: 3.5em;
-    max-width: 21em;
+    /* max-width: 21em; */
 }
 
 
@@ -272,7 +275,7 @@ nav ul {
     margin: 1.2em 0;
 }
 
-.introtekst div:nth-child(2) p{
+.introtekst div:nth-child(2) p {
     width: 18em;
 }
 
@@ -310,6 +313,11 @@ nav ul {
 .introtekst div:nth-child(2) a:hover span:first-child {
     /* background-color: #d17985 ; */
     width: 100%;
+
 }
+
+
+
+
 
 /* =================== MY WORK ====================== */
