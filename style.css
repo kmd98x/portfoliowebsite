@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     background: #EEE7DF;
     animation: fadepage 3s;
 }
@@ -24,10 +25,11 @@ article {
 }
 
 .linkerbalk{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: -1;
+    width: 8em;
 }
 
 /* als het 1024 is, dan zijn ze naast elkaar. Dus als het groter is dan 1024, pas de onderstaande srtyling toe en dat is dus dat het naast elkaar komt, anders is het onder elkaar voor de telefoon*/
@@ -68,6 +70,12 @@ article section.geheelfoto span {
     background:  #78212D !important;
 }
 
+.forthline{
+    background: #D5C3AE;
+    width: 18em;
+    height: .2em;
+    display: block;
+}
 @media screen and (min-width: 510px) {
     .firstline {
         left: -6.2em;
@@ -88,7 +96,8 @@ article section.geheelfoto span {
         /* bottom: 5.5em; */
         left:-2.65em;
         top: 14.4em;
-        height: .15em !important;
+        height: 0.15em !important;
+        background: #D5C3AE;
 
     }
 }
@@ -113,7 +122,7 @@ article section.geheelfoto span {
         bottom: 3.5em;
         left: -2.3em;
         top: 21.4em;
-        height: .3em !important;
+        height: .2em !important;
 
     }
 }
@@ -254,6 +263,7 @@ nav ul {
     transition: 0.6s;
     position: relative;
     overflow: hidden;
+    margin-top: 1em;
 }
 
 .introtekst div:nth-child(2) a span:first-child {
@@ -279,4 +289,4 @@ nav ul {
     width: 100%;
 }
 
-/* =================== LATEST WORK ====================== */
+/* =================== MY WORK ====================== */
