@@ -49,7 +49,7 @@ article section.mijnfoto p {
     font-size: 0.8em;
 }
 
-article section.mijnfoto p span {
+article section.mijnfoto p .achternaam {
     white-space: nowrap;
     display: none;
     margin-left: 1em;
@@ -308,38 +308,41 @@ nav ul li a:hover span {
 */
 
 @media screen and (min-width: 1024px) {
+
+
+    article section.mijnfoto p .achternaam{
+        display: inline-block;
+    }
+        
     .firstline {
-        left: -5.5em;
-        bottom: 13em;
-        width: 8em;
+        left: -20.5em;
+        bottom: 15em;
+        width: 13em;
     }
 
     .secondline {
-        width: 3.7em;
+        width: 1.35em;
         opacity: 1;
-        bottom: 13em;
-        left: 13.1em;
+        bottom: 15em;
+        left: 18.2em;
     }
 
     .thirdline {
-        width: 13.3em;
-        opacity: 0.7;
-        bottom: 3.5em;
-        left: -2.3em;
-        top: 21.4em;
-        height: .2em !important;
-
+        width: 25.3em;
+        left: -12.5em;
+        height: 0.3em !important;
+        bottom: 13.65em;
     }
 
     article section.mijnfoto p {
-        position: absolute;
-        bottom: 12.85em;
-        left: 4em;
-        font-size: 0.9em;
+        bottom: 10em;
+        left: -5em;
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
     }
 
     article section.mijnfoto img {
-        max-width: 30em;
+        max-width: 35em;
     }
 }
 
