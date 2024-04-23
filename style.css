@@ -1,8 +1,8 @@
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: #EEE7DF;
     animation: fadepage 3s;
-    max-width: 100vh;
+    /* max-width: 100vh; */
 }
 
 @keyframes fadepage {
@@ -259,6 +259,11 @@ nav ul li a:hover span {
 ===========================================================================
 */
 @media screen and (min-width: 725px) {
+
+    article section.mijnfoto p {
+        font-size: 1.2em;
+    }
+    
     article {
         justify-content: center;
         max-width: 70em;
@@ -271,15 +276,28 @@ nav ul li a:hover span {
     }
 
     .firstline {
-        width: 1em;
+        left: -7.9em;
+        bottom: 12.8em;
+        width: 11em;
     }
 
     .thirdline {
-        width: 4em;
+        left: -3em;
+        bottom: 11.9em;
+        width: 14em;
     }
 
     article section.mijnfoto img {
-        width: 40em !important;
+        max-width: 30em;
+    }
+
+    .introtekst div:nth-child(2) p {
+        font-size: 1.1em;
+        width: 21em;
+    }
+
+    .introtekst div:nth-child(2) a{
+        font-size: 1.1em;
     }
 }
 
