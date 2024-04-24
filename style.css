@@ -419,4 +419,56 @@ nav ul li a:hover span {
 
 
 
-/* =================== MY WORK ====================== */
+
+
+/**
+===========================================================================
+===========================================================================
+                                MY WORK
+===========================================================================
+===========================================================================
+*/
+
+.mywork-header{
+    display: flex;
+    align-items: center;
+    gap:6em;
+    padding: 0 3em;
+    margin-top: 10em;
+}
+
+
+.mywork-header span{
+    display: inline-block;
+    height: 0.2em;
+    flex-grow: 1;
+    background-color: #78212D;
+}
+
+.mywork-header h1{
+    border-top:0.18em solid #D5C3AE;
+    width:11em;
+    padding-top: 3em;
+    margin-top: -2.3em;
+    text-align: center;
+}
+
+.vlak{
+    position: fixed;
+}
+
+.vlak1{
+    
+}
+
+.vlak2{
+    
+}
+
+.vlak3{
+    
+}
+
+.vlak4{
+    
+}
