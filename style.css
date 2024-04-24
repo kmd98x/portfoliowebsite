@@ -69,10 +69,11 @@ article section.mijnfoto img {
 
 .linkerbalk {
     position: fixed;
-    bottom: 0;
+    bottom: -2em;
     left: 0;
     z-index: -1;
     width: 8em;
+    opacity: 65%;
 }
 
 .firstline {
@@ -104,7 +105,8 @@ nav ul {
     display: flex;
     gap: 1.5em;
     justify-content: flex-end;
-    padding-right: 0.5em;
+    padding: 0;
+
 }
 
 nav li {
@@ -222,6 +224,7 @@ nav ul li a:hover span {
 ===========================================================================
 */
 @media screen and (min-width: 510px) {
+
     .firstline {
         left: -7.3em;
         bottom: 10.7em;
@@ -271,7 +274,7 @@ nav ul li a:hover span {
     }
 
     .linkerbalk {
-        top: 20em;
+        bottom: -15.3em;
         width: 14.1em;
     }
 
@@ -308,10 +311,13 @@ nav ul li a:hover span {
 */
 
 @media screen and (min-width: 1024px) {
-
-
     article section.mijnfoto p .achternaam{
         display: inline-block;
+    }
+
+    .linkerbalk {
+        bottom: -2.3em;
+        width: 10.1em;
     }
         
     .firstline {
@@ -349,10 +355,67 @@ nav ul li a:hover span {
 
 /**
 ===========================================================================
-                        MEDIA QUERY VAN 2048 PX
+                        MEDIA QUERY VAN 1280 PX
 ===========================================================================
 */
 
+@media screen and (min-width: 1280px) {
+    article{
+        flex-direction: row;
+        margin-left:10em;
+        gap:5.5em;
+    }
+
+    article section.mijnfoto p .achternaam{
+        display: inline-block;
+        margin-left: 0.5em
+
+    }
+
+    .linkerbalk {
+        bottom: -3.3em;
+        width: 9.1em;
+    }
+        
+    .firstline {
+        left: -18em;
+        bottom: 13.5em;
+        width: 13em;
+    }
+
+    .secondline {
+        width: 1.7em;
+        opacity: 1;
+        bottom: 13.5em;
+        left: 15.65em;
+
+    }
+
+    .thirdline {
+        width: 17.3em;
+        left: -5.9em;
+        height: 0.3em !important;
+        bottom: 12.4em;
+    }
+
+    article section.mijnfoto p {
+        bottom: 10.7em;
+        left: -3.5em;
+        font-size: 1.1em;
+        letter-spacing: 0.08em;
+    }
+
+    article section.mijnfoto img {
+        max-width: 31em;
+    }
+
+    .introtekst img {
+        width: 1.6em;
+        display: block;
+        margin-bottom: 0.5em;
+        margin: 0em 0.7em 0.5em auto;
+    }
+}
 
 
 
